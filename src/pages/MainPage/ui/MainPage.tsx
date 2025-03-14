@@ -1,13 +1,15 @@
-import React from 'react';
-import { useTranslation } from 'react-i18next';
+import React, { useState } from 'react';
+ import cls from"./Counter.module.scss";
+
 
 const MainPage = () => {
-    const { t } = useTranslation();
 
+    const [count, setCount] = useState(0);
     return (
-        <div>
-            {t('Главная страница')}
-        </div>
+        <div className={cls.counterContainer}>
+      <h1 className={cls.counterText}>Counter: {count}</h1>
+      <button className={cls.counterButton} onClick={() => setCount(count + 1)}>+</button>
+    </div>
     );
 };
 
