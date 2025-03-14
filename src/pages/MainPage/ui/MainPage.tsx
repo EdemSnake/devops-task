@@ -14,7 +14,7 @@ const MainPage = () => {
             </button>
             <button type="button" className={cls.counterButton} onClick={() => setCount(count - 1)}>
                 -
-            </button
+            </button>
         </div>
     );
 };
