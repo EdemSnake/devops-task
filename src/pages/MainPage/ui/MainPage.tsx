@@ -15,6 +15,9 @@ const MainPage = () => {
             <button type="button" className={cls.counterButton} onClick={() => setCount(count - 1)}>
                 -
             </button>
+            <button type="button" className={cls.counterButton} onClick={() => setCount(0)}>
+                Reset
+            </button>
         </div>
     );
 };
